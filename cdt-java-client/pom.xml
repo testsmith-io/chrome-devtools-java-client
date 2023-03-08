@@ -5,9 +5,9 @@
     <!-- NOTE(kklisura): Do not add parent tag here, since it gets deployed (via mvn deploy)[at least on snapshot repo],
          so clients won't be able to pull it unless parent is also deployed -->
 
-    <groupId>com.github.kklisura.cdt</groupId>
+    <groupId>io.fluidsonic.mirror</groupId>
     <artifactId>cdt-java-client</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.0-fluidsonic-1</version>
     <packaging>jar</packaging>
 
     <name>cdt-java-client</name>
@@ -35,9 +35,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/kklisura/chrome-devtools-java-client.git</connection>
-        <developerConnection>scm:git:ssh://github.com:kklisura/chrome-devtools-java-client.git</developerConnection>
-        <url>http://github.com/kklisura/chrome-devtools-java-client/tree/master</url>
+        <connection>scm:git:git://github.com/fluidsonic/chrome-devtools-java-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:fluidsonic/chrome-devtools-java-client.git</developerConnection>
+        <url>http://github.com/fluidsonic/chrome-devtools-java-client/tree/master</url>
     </scm>
 
     <distributionManagement>

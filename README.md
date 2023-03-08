@@ -1,5 +1,12 @@
 # Chrome DevTools Java Client
 
+## This mirror
+
+This is a mirror of [kklisura/chrome-devtools-java-client](https://github.com/kklisura/chrome-devtools-java-client) which supports Chrome 111.
+
+**Please make sure to start Chrome with `--remote-allow-origins=*` or a specific origin.**
+Chrome 111 no longer allows DevTools Websocket connections from arbitrary origins.
+
 ## Description
 
 Chrome DevTools Java Client is a DevTools client - in Java. (: It can be used for *instrumenting, inspecting, debuging and profiling Chromium, Chrome and other Blink-based browsers.* [1]
@@ -22,9 +29,9 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-  <groupId>com.github.kklisura.cdt</groupId>
+  <groupId>io.fluidsonic.mirror</groupId>
   <artifactId>cdt-java-client</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.0-fluidsonic-1</version>
 </dependency>
 ```
 
