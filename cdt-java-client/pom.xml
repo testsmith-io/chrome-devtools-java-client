@@ -35,9 +35,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/kklisura/chrome-devtools-java-client.git</connection>
-        <developerConnection>scm:git:ssh://github.com:kklisura/chrome-devtools-java-client.git</developerConnection>
-        <url>http://github.com/kklisura/chrome-devtools-java-client/tree/master</url>
+        <connection>scm:git:git://github.com//testsmith-io/chrome-devtools-java-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:/testsmith-io/chrome-devtools-java-client.git</developerConnection>
+        <url>http://github.com//testsmith-io/chrome-devtools-java-client/tree/master</url>
     </scm>
 
     <distributionManagement>
