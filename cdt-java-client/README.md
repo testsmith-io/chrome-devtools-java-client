@@ -18,7 +18,7 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-  <groupId>com.github.testsmith.cdt</groupId>
+  <groupId>io.testsmith.cdt</groupId>
   <artifactId>cdt-java-client</artifactId>
   <version>2.1.0</version>
 </dependency>
@@ -27,7 +27,7 @@ Add the following dependency to your `pom.xml`:
 You can use following code, taken from, `LogRequestsExample`:
 
 ```java
-package com.github.testsmith.cdt.examples;
+package io.testsmith.cdt.examples;
 
 import com.github.testsmith.cdt.launch.ChromeLauncher;
 import com.github.testsmith.cdt.protocol.commands.Network;

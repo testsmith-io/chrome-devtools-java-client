@@ -5,9 +5,9 @@
     <!-- NOTE(kklisura): Do not add parent tag here, since it gets deployed (via mvn deploy)[at least on snapshot repo],
          so clients won't be able to pull it unless parent is also deployed -->
 
-    <groupId>com.github.testsmith.cdt</groupId>
+    <groupId>io.testsmith</groupId>
     <artifactId>cdt-java-client</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.0-testsmith-1</version>
     <packaging>jar</packaging>
 
     <name>cdt-java-client</name>
@@ -240,7 +240,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.0.0</version>
+                        <version>3.0.1</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -248,10 +248,17 @@
                                     <goal>jar</goal>
                                 </goals>
                                 <configuration>
-                                    <doclint>none</doclint>
+                                    <quiet>true</quiet>
+                                    <failOnWarnings>false</failOnWarnings>
+                                    <failOnError>false</failOnError>
                                 </configuration>
                             </execution>
                         </executions>
+                        <configuration>
+                            <quiet>true</quiet>
+                            <failOnWarnings>false</failOnWarnings>
+                            <failOnError>false</failOnError>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>

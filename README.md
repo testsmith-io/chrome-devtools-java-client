@@ -145,6 +145,10 @@ To go over each module and each source java file to update copyright license hea
 make update-copyright-license-header
 ```
 
+## Deploy without tests
+
+`mvn clean install deploy -Prelease -Dmaven.test.skip=true`
+
 ## License
 
 Chrome DevTools Java Client is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE.txt) for the full license text.

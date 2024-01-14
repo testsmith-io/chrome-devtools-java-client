@@ -1,0 +1,116 @@
+package com.github.testsmith.cdt.protocol.events.page;
+
+/*-
+ * #%L
+ * cdt-java-client
+ * %%
+ * Copyright (C) 2018 - 2024 Kenan Klisura
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+import com.github.testsmith.cdt.protocol.support.annotations.Experimental;
+
+/**
+ * Fired when download makes progress. Last call has |done| == true. Deprecated. Use
+ * Browser.downloadProgress instead.
+ *
+ * @author roy
+ * @version $Id: $Id
+ */
+@Experimental
+@Deprecated
+public class DownloadProgress {
+
+  private String guid;
+
+  private Double totalBytes;
+
+  private Double receivedBytes;
+
+  private DownloadProgressState state;
+
+  /**
+   * Global unique identifier of the download.
+   *
+   * @return a {@link java.lang.String} object
+   */
+  public String getGuid() {
+    return guid;
+  }
+
+  /**
+   * Global unique identifier of the download.
+   *
+   * @param guid a {@link java.lang.String} object
+   */
+  public void setGuid(String guid) {
+    this.guid = guid;
+  }
+
+  /**
+   * Total expected bytes to download.
+   *
+   * @return a {@link java.lang.Double} object
+   */
+  public Double getTotalBytes() {
+    return totalBytes;
+  }
+
+  /**
+   * Total expected bytes to download.
+   *
+   * @param totalBytes a {@link java.lang.Double} object
+   */
+  public void setTotalBytes(Double totalBytes) {
+    this.totalBytes = totalBytes;
+  }
+
+  /**
+   * Total bytes received.
+   *
+   * @return a {@link java.lang.Double} object
+   */
+  public Double getReceivedBytes() {
+    return receivedBytes;
+  }
+
+  /**
+   * Total bytes received.
+   *
+   * @param receivedBytes a {@link java.lang.Double} object
+   */
+  public void setReceivedBytes(Double receivedBytes) {
+    this.receivedBytes = receivedBytes;
+  }
+
+  /**
+   * Download status.
+   *
+   * @return a {@link com.github.testsmith.cdt.protocol.events.page.DownloadProgressState} object
+   */
+  public DownloadProgressState getState() {
+    return state;
+  }
+
+  /**
+   * Download status.
+   *
+   * @param state a {@link com.github.testsmith.cdt.protocol.events.page.DownloadProgressState}
+   *     object
+   */
+  public void setState(DownloadProgressState state) {
+    this.state = state;
+  }
+}

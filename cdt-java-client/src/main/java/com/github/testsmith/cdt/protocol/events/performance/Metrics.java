@@ -1,0 +1,73 @@
+package com.github.testsmith.cdt.protocol.events.performance;
+
+/*-
+ * #%L
+ * cdt-java-client
+ * %%
+ * Copyright (C) 2018 - 2024 Kenan Klisura
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+import com.github.testsmith.cdt.protocol.types.performance.Metric;
+import java.util.List;
+
+/**
+ * Current values of the metrics.
+ *
+ * @author roy
+ * @version $Id: $Id
+ */
+public class Metrics {
+
+  private List<Metric> metrics;
+
+  private String title;
+
+  /**
+   * Current values of the metrics.
+   *
+   * @return a {@link java.util.List} object
+   */
+  public List<Metric> getMetrics() {
+    return metrics;
+  }
+
+  /**
+   * Current values of the metrics.
+   *
+   * @param metrics a {@link java.util.List} object
+   */
+  public void setMetrics(List<Metric> metrics) {
+    this.metrics = metrics;
+  }
+
+  /**
+   * Timestamp title.
+   *
+   * @return a {@link java.lang.String} object
+   */
+  public String getTitle() {
+    return title;
+  }
+
+  /**
+   * Timestamp title.
+   *
+   * @param title a {@link java.lang.String} object
+   */
+  public void setTitle(String title) {
+    this.title = title;
+  }
+}
